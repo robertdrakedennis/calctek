@@ -64,7 +64,7 @@ const jumpToHistory = (index) => {
     <div class="min-h-screen flex items-center justify-center bg-gray-100">
         <div class="rounded-2xl grid w-full max-w-[16rem] bg-gray-900 px-2 shadow-lg border-2 border-gray-500">
             <div class="flex flex-col h-32 w-full items-end justify-end overflow-hidden">
-                <div class="flex items-center space-x-2 w-full overflow-x-scroll mb-2 h-12">
+                <div class="flex items-center space-x-2 w-full overflow-x-scroll pb-2 h-12">
                     <template v-for="(history, index) in history">
                         <div @click="jumpToHistory(index)" class="px-2 text-sm rounded-full border border-gray-700 text-gray-400 inline-flex items-center justify-center hover:border-neutral-400 cursor-pointer">
                             <button @click="removeFromHistory(index)" class="text-xs mr-1 hover:text-red-500">x</button>
